@@ -1,0 +1,27 @@
+<package>
+  <description brief="hrp2_bike_dynamic">
+
+     hrp2_bike_dynamic
+
+  </description>
+  <author>Benoit Sinivassin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>https://github.com/benwayne182/hrp2_bike_dynamic</url>
+
+    <rosdep name="boost"/>
+    <rosdep name="eigen"/>
+
+    <depend package="roscpp" />
+    <depend package="rospy" />
+    <depend package="std_msgs"/>
+    <depend package="std_srvs"/>
+    <depend package="geometry_msgs"/>
+    <depend package="sensor_msgs"/>
+    <depend package="tf"/>
+    <depend package="message_filters"/>
+    <depend package="dynamic_graph_bridge"/>
+    <depend package="openhrp_bridge_msgs"/>
+</package>
+
+
