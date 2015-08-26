@@ -23,20 +23,20 @@ sleep 10
 '
 ''' % locals(), '-t', '''Start OpenHRP'''])
 
-# Launch openhrp bridge
+# Start SoT
 terminal.extend(['--tab-with-profile=HoldOnExit', '-e','''
 bash -c '
-echo "openhrp bridge"
+echo "SoT"
 sleep 20
-roslaunch hrp2_bike_dynamic hrp2_bike_dynamic.launch
+/opt/grx/HRP2LAAS/script/sot_ben.py
 '
-''' % locals(), '-t', '''Launch openhrp bridge'''])
+''' % locals(), '-t', '''Start SoT'''])
 
 # Start dynamic_graph_bridge run_command terminal
 terminal.extend(['--tab-with-profile=HoldOnExit', '-e','''
 bash -c '
 echo "run command :"
-sleep 25
+sleep 30
 rosrun dynamic_graph_bridge run_command
 '
 ''' % locals(), '-t', '''Run Command'''])

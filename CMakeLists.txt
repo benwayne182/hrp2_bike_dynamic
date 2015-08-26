@@ -37,6 +37,9 @@ include_directories(${Eigen_INCLUDE_DIRS})
 
 INSTALL(FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/scripts/cycling.py
-#  DESTINATION ${PYTHON_SITELIB}/dynamic_graph/sot/application
   DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/python2.7/site-packages/dynamic_graph/sot/application #Put your own path to the installation directory
+  )
+INSTALL(FILES
+  ${CMAKE_CURRENT_SOURCE_DIR}/scripts/sot_ben.py
+  DESTINATION /opt/grx/HRP2LAAS/script
   )
